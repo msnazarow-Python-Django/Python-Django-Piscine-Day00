@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <style type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazarov M.S</title>
+    <script src="https://kit.fontawesome.com/95c4f2c6bd.js" crossorigin="anonymous"></script>
+    <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
         * {
             margin: 0;
@@ -44,7 +49,6 @@
         
         .resume .resume_left .resume_profile {
             width: 100%;
-            /* height: 280px;  */
         }
         
         .resume .resume_left .resume_profile img {
@@ -168,7 +172,10 @@
             padding-left: 40px;
             overflow: hidden;
         }
-        
+        .resume .resume_right .resume_projects{
+            padding: 0 0 25px;
+        }
+
         .resume .resume_right ul li .date {
             font-size: 16px;
             font-weight: 500;
@@ -258,20 +265,13 @@
             display: none;
         }
     </style>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nazarov M.S</title>
-    <script src="https://kit.fontawesome.com/95c4f2c6bd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="resume">
         <div class="resume_left">
             <div class="resume_profile">
-                <img src="https://sun9-36.userapi.com/impg/c857224/v857224037/119c4b/DpZENADrwBo.jpg?
-					size=1619x2160&quality=96&sign=f0d05783aa964bc1e2858da9f5869dbc&type=album" alt="Nazarov M.S">
-
+                <img src="https://sun9-36.userapi.com/impg/c857224/v857224037/119c4b/DpZENADrwBo.jpg?size=1619x2160&quality=96&sign=f0d05783aa964bc1e2858da9f5869dbc&type=album" alt="Nazarov M.S">
             </div>
             <div class="resume_content">
                 <div class="resume_item resume_info">
@@ -343,23 +343,23 @@
                         <li>
                             <div class="skill_name">Python</div>
                             <div class="skill_progress">
-                                <span style="width: 70%;"></span>
+                                <span style="width: 60%;"></span>
                             </div>
                             <div class="skill_per">60%</div>
                         </li>
                         <li>
                             <div class="skill_name">Docker</div>
                             <div class="skill_progress">
-                                <span style="width: 70%;"></span>
+                                <span style="width: 80%;"></span>
                             </div>
                             <div class="skill_per">80%</div>
                         </li>
                         <li>
-                            <div class="skill_name">Kubernetes</div>
+                            <div class="skill_name">Shell</div>
                             <div class="skill_progress">
-                                <span style="width: 70%;"></span>
+                                <span style="width: 90%;"></span>
                             </div>
-                            <div class="skill_per">50%</div>
+                            <div class="skill_per">90%</div>
                         </li>
                     </ul>
                 </div>
@@ -410,20 +410,29 @@
                 <div class="title">
                     <p class="bold">Projects</p>
                 </div>
+                <ul>
                     <li>
-                        <div class="date">2021-Present</div>
                         <div class="info">
-                            <p class="semi-bold">Developer</p>
-                            <p>Recently I started work as a Software developer myself, and nowadays i work as IOS Developer.</p>
+                            <p class="semi-bold">C</p>
+                            <p><b>Minishell</b> - alter shell for UNIX system.</p>
                         </div>
                     </li>
                     <li>
-                        <div class="date">2012-Present</div>
                         <div class="info">
-                            <p class="semi-bold">Private Teacher.</p>
-                            <p>From 18 years old i teach math pythics and computer scince. 
-                            Last several years I help others to learn programing languages, such as C, C++, Python, Swift and others.
-                        </p>
+                            <p class="semi-bold">C++</p>
+                            <p><b>Webserv</b> - Http server with php-cgi and python-cgi.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <p class="semi-bold">Swift</p>
+                            <p><b>Intra42</b> - intra.42.fr client with oauth2</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="info">
+                            <p class="semi-bold">Network&Containers</p>
+                            <p><b>Ft-services</b> - Kubernetes docker conteiners with nginx, wordpress, mariadb, phpmyadmin, telegraf, infuxdb and grafana</p>
                         </div>
                     </li>
                 </ul>
@@ -444,9 +453,8 @@
                         <div class="date">2012-Present</div>
                         <div class="info">
                             <p class="semi-bold">Private Teacher.</p>
-                            <p>From 18 years old i teach math pythics and computer scince. 
-                            Last several years I help others to learn programing languages, such as C, C++, Python, Swift and others.
-                        </p>
+                            <p>From 18 years old i teach math pythics and computer scince. Last several years I help others to learn programing languages, such as C, C++, Python, Swift and others.
+                            </p>
                         </div>
                     </li>
                 </ul>
@@ -491,20 +499,9 @@
             </div>
         </div>
     </div>
+    <table style="border-style: solid; border-color: #424242; border-collapse: collapse;">
+        <tr><th></th></tr>
+        <tr><td><ol></ol></td></tr>
+    </table>
 </body>
-
 </html>
-<!-- You must respect the semantics of your HTML tags, as well as the separation
-between style and content.
-• You must create a consistent HTML file with the minimum required content: name,
-surname, skills and career path.
-• You must display at least one title with the title tag and a title with the h1 tag.
-• You must use at least one table with the table, th, tr and td tags.
-• You must use at least a list with the ul tag and a list with the ol tag. The elements
-must use a li tag.
-• The table borders must be visible (solid). The table borders must be merged
-(collapse).
-• The lowest right cell of a table must have a #424242 border color.
-• You must use a different syntactic solution for each previous instuctions: for the
-first one, use the style tag in the head of your page. For the second, use a style
-attribute in the tag you see fit. -->

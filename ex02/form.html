@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student form</title>
     <style>
@@ -16,14 +16,12 @@
             margin-left: 50%;
         }
     </style>
-    <script type="text/javascript" src="popup.js"></script>
+    <script src="popup.js"></script>
 </head>
 <body>
 <form name="Contact form" action="popup.js">
+    <h1>Contact form</h1>
     <table>
-       <th>
-           <h1>Contact form</h1>
-       </th>
         <tr>
             <td>
                 <label for="firstname">Firstname:</label>
@@ -45,7 +43,7 @@
                 <label for="age">Age:</label>
             </td>
             <td>        
-                <input type="number" placeholder="Input your age" name="age" id="age" maxlength="15" min="16" max="120">
+                <input type="number" placeholder="Input your age" name="age" id="age" min="16" max="120">
             </td>
         </tr>
         <tr>
@@ -66,27 +64,27 @@
         </tr>
         <tr>
             <td>      
-                <label for="42student">Student at 42?</label>
+                <label for="student">Student at 42?</label>
             </td>
             <td>        
-                <input type="checkbox" placeholder="Student at 42" name="42student" id="student">
+                <input type="checkbox" name="42student" id="student">
             </td>
         </tr>
         <tr>
             <td>
-                <label for="gender">Gender:</label>
+                Gender:
             </td>
             <td>
                 <table id="gender">
                     <tr>
                         <td>
-                            <label for="gender_male">Male:</label>
+                            <label for="gender_male">Male</label>
                         </td>
                         <td>
-                            <label for="gender_female">Female:</label>
+                            <label for="gender_female">Female</label>
                         </td>
                         <td>
-                            <label for="gender_other">Other:</label>
+                            <label for="gender_other">Other</label>
                         </td>
                     </tr>
                     <tr>
@@ -103,12 +101,8 @@
                 </table>
             </td>
         </tr>
-        <tr>
-            <td>
-                <input type="button" onclick="displayFormContents();" value="Check form">
-            </td>
-        </tr>
     </table>
+    <input type="button" onclick="displayFormContents();" value="Check form">
        
 </form>
 </body>
